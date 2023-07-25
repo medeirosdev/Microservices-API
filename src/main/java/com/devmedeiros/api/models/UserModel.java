@@ -16,6 +16,16 @@ public class UserModel {
         return id;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    private String username;
+
     public void setId(int id) {
         this.id = id;
     }
@@ -56,11 +66,12 @@ public class UserModel {
 
     public String salt;
 
-    public UserModel(String email, String password, String salt, String hashUser) {
+    public UserModel(String email, String password, String salt, String hashUser , String username) {
         this.email = email;
         this.password = password;
         this.salt = salt;
         this.hashUser = hashUser;
+        this.username = username;
     }
 
     public String hashUser;

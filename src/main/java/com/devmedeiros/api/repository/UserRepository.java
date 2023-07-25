@@ -6,9 +6,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface UserRepository extends JpaRepository<UserModel, String> {
+public interface UserRepository extends CrudRepository<UserModel, String> {
 
-    public UserModel findByUser(String HashUser);
-    public UserModel findByUserNameAndPassword(String userName, String password);
 }
 

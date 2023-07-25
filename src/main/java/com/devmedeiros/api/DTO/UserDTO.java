@@ -6,6 +6,16 @@ public class UserDTO {
     private String email;
     private String password;
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    private String username;
+
     public String getHashUser() {
         return hashUser;
     }
